@@ -56,21 +56,60 @@
     h1 { font-size: 1.8rem; }
     nav a { display: inline-block; margin-bottom: 8px; }
   }
+
+  .profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+  }
+
+  .profile-info {
+    flex: 1;
+  }
+
+  .profile-photo {
+    width: 190px;
+    height: 230px;
+    object-fit: cover;
+    object-position: center 35%;
+    border-radius: 10px;
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 600px) {
+    .profile-header {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    .profile-photo {
+      width: 160px;
+      height: 190px;
+    }
+  }
 </style>
 </head>
 
 <body>
 
-<header>
-  <h1>Toby Jingran Gong</h1>
-  <p class="subtitle muted">
-    B.Sc. Computer Science<br>
-    Technical University of Munich (TUM)
-  </p>
-  <p>
-    <a href="mailto:jingran.gong@tum.de">Email</a> /
-    <a href="https://www.linkedin.com/in/JingranGong/">LinkedIn</a>
-  </p>
+<header class="profile-header">
+  <div class="profile-info">
+    <h1>Toby Jingran Gong</h1>
+    <p class="subtitle muted">
+      B.Sc. Computer Science<br>
+      Technical University of Munich (TUM)
+    </p>
+    <p>
+      <a href="mailto:jingran.gong@tum.de">Email</a> /
+      <a href="https://www.linkedin.com/in/JingranGong/">LinkedIn</a>
+    </p>
+  </div>
+
+  <img src="564b335c42b5c06a6c02a08873d4f9e6.jpg"
+       alt="Toby Jingran Gong"
+       class="profile-photo">
 </header>
 
 <nav>
@@ -83,14 +122,14 @@
   <h2>About Me</h2>
   <p>
     I am an undergraduate student majoring in Computer Science
-    at the Technical University of Munich (TUM). I am now doing a 
+    at the Technical University of Munich (TUM). I am now doing a
     Internship @Phinia and RA @Helmholtz Munich.
   </p>
   <p>
-    I am interested in exploring how Machine Learning can 
-    help us better understand the world 
-    and solve real-world scientific problems. 
-    I enjoy learning new things, exploring different ideas, 
+    I am interested in exploring how Machine Learning can
+    help us better understand the world
+    and solve real-world scientific problems.
+    I enjoy learning new things, exploring different ideas,
     and turning curiosity into something meaningful.
   </p>
 </section>
@@ -108,17 +147,15 @@
   <div class="entry">
     <h3>Research Assistant — Helmholtz Munich</h3>
     <p class="muted">
-      Work on a Applied Machine Learning reseach project 
+      Work on a Applied Machine Learning reseach project
       including Multi-task Learning, Meta-learning, Few-shot Learning and so on
       under the supervision of Dr. Igor Tetko.
     </p>
     <p>
-   
+
     </p>
   </div>
 </section>
-
-
 
 <section id="contact">
   <h2>Contact</h2>
