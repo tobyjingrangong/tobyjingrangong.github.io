@@ -2,44 +2,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1">
-  <title>Toby Jingran Gong</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 850px;
-      margin: 60px auto;
-      padding: 0 24px;
-      line-height: 1.7;
-      color: #222;
-    }
-    h1 { margin-bottom: 4px; }
-    h2 {
-      margin-top: 38px;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 8px;
-    }
-    a { color: #1763aa; }
-    nav a { margin-right: 20px; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Toby Jingran Gong | Academic Homepage</title>
+
+<style>
+  :root {
+    --text: #252525;
+    --muted: #666;
+    --accent: #1764a0;
+    --border: #e5e5e5;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Arial, sans-serif;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 50px 24px 80px;
+    line-height: 1.75;
+    color: var(--text);
+    background: #fff;
+  }
+
+  h1 { font-size: 2.2rem; margin: 0; }
+  h2 {
+    font-size: 1.35rem;
+    margin-top: 42px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  h3 { margin-bottom: 3px; font-size: 1.05rem; }
+  p { margin-top: 8px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .muted { color: var(--muted); }
+  .subtitle { margin: 4px 0 12px; }
+  nav { margin: 24px 0 38px; }
+  nav a { margin-right: 18px; white-space: nowrap; }
+  .entry { margin-bottom: 24px; }
+  .entry p { margin: 5px 0; }
+  .date { color: var(--muted); font-size: .9rem; }
+  footer {
+    margin-top: 55px;
+    border-top: 1px solid var(--border);
+    padding-top: 18px;
+    color: var(--muted);
+    font-size: .85rem;
+  }
+
+  @media (max-width: 600px) {
+    body { padding: 30px 18px; }
+    h1 { font-size: 1.8rem; }
+    nav a { display: inline-block; margin-bottom: 8px; }
+  }
+</style>
 </head>
+
 <body>
+
+<header>
   <h1>Toby Jingran Gong</h1>
-  <p>Computer Science Undergraduate | TUM</p>
-
-  <nav>
-    <a href="#about">About</a>
-    <a href="#research">Research</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <h2 id="about">About Me</h2>
-  <p>
-    I am a Computer Science undergraduate at the Technical University of Munich with interests in Machine Learning.
+  <p class="subtitle muted">
+    B.Sc. Computer Science<br>
+    Technical University of Munich (TUM)
   </p>
-  
+  <p>
+    <a href="mailto:jingran.gong@tum.de">Email</a> /
+    <a href="https://github.com/">GitHub</a> /
+    <a href="https://www.linkedin.com/">LinkedIn</a>
+  </p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#research">Research</a>
+  <a href="#experience">Experience</a>
+  <a href="#publications">Publications</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I am an undergraduate student in Computer Science
+    at the Technical University of Munich (TUM).
+    My research interests lie in machine learning,
+    particularly robust and reliable learning,
+    few-shot learning, and AI for Science.
+  </p>
+  <p>
+    I am interested in understanding how machine
+    learning methods generalize under limited data,
+    distribution shifts, and real-world constraints.
+  </p>
+</section>
+
+<section id="research">
+  <h2>Research Interests</h2>
+  <ul>
+    <li>Machine Learning and Generalization</li>
+    <li>Robustness and Distribution Shift</li>
+    <li>Few-Shot Learning and Meta-Learning</li>
+    <li>AI for Science and Computational Chemistry</li>
+  </ul>
+
+  <h2>Research Experience</h2>
+
+  <div class="entry">
+    <h3>Research Assistant — Helmholtz Munich</h3>
+    <p class="muted">
+      Machine Learning
+    </p>
+    <p>
+   
+    </p>
+  </div>
+</section>
+
+
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>
+    <strong>Email:</strong>
+    <a href="mailto:jingran.gong@tum.de">
+      jingran.gong@tum.de
+    </a>
+  </p>
+  <p>
+    <strong>Institution:</strong>
+    Technical University of Munich, Germany
+  </p>
+</section>
+
+<footer>
+  © 2026 Toby Jingran Gong.
+  Hosted on GitHub Pages.
+</footer>
+
 </body>
 </html>
